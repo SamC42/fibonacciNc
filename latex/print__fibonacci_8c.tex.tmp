@@ -1,0 +1,31 @@
+\hypertarget{print__fibonacci_8c}{}\section{print\+\_\+fibonacci.\+c File Reference}
+\label{print__fibonacci_8c}\index{print\+\_\+fibonacci.\+c@{print\+\_\+fibonacci.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+Include dependency graph for print\+\_\+fibonacci.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{print__fibonacci_8c_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{print\+\_\+fibonacci.\+c@{print\+\_\+fibonacci.\+c}!main@{main}}
+\index{main@{main}!print\+\_\+fibonacci.\+c@{print\+\_\+fibonacci.\+c}}
+\subsubsection[{\texorpdfstring{main(int argc, char $\ast$argv[])}{main(int argc, char *argv[])}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{print__fibonacci_8c_a0ddf1224851353fc92bfbff6f499fa97}{}\label{print__fibonacci_8c_a0ddf1224851353fc92bfbff6f499fa97}
+Class to handle the printing of Fibonacci\textquotesingle{}s sequence Description\+: Program to generate the first n Fibonacii numbers F(n) printing\+:
+\begin{DoxyEnumerate}
+\item \char`\"{}\+Buzz\char`\"{} w/ F(n) is divisible by 3.
+\item \char`\"{}\+Fizz\char`\"{} w/ F(n) is divisible by 5.
+\item \char`\"{}\+Fizz\+Buzz\char`\"{} w/ F(n) is divisible by 15.
+\item \char`\"{}\+Buzz\+Fizz\char`\"{} w/ F(n) is prime.
+\item the value of F(n) otherwise..
+\end{DoxyEnumerate}
+
+Date Created\+: 6/6/2017 Author\+: Sam Cesario 
