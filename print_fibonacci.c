@@ -22,6 +22,7 @@ int print_fib(int n){
 	//auto variables
 	int first=0, second=1, sum=0;
 
+	//Prints for First two numbers assuming starting pt at 0
 	printf("%i ", first);
 	printf("%i ", second);
 
@@ -29,13 +30,32 @@ int print_fib(int n){
 		first++;
 		second++;
 		sum = first + second;
-		printf(" %i",sum);
+		//If Clauses to handle weird prints
+		
+		if(sum % 3 == 0) printf("Buzz ");
+		if(sum % 5 == 0) printf("Fizz ");
+		if(sum % 15 == 0) printf("FizzBuzz ");
+		if(check_prime(n))printf("BuzzFizz ");	
+		else printf(" %i ",sum);
 	}
 	printf("\n");
 	return 1;
 }
+/**
+	Method to check if the input is a prime number
+	@
+*/
+int check_prime(int n_prime){
 
-
+	for(int i=2; i<=n_prime;i++){
+		for(int j=2; j<= i/2; j++){
+			if( i % j == 0){
+				return 0;
+			}
+		}
+	}
+	return 1;
+}
 int main(int argc, char *argv[]){
 
 	if(argv[0] == NULL){
