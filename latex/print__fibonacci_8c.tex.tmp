@@ -1,16 +1,34 @@
 \hypertarget{print__fibonacci_8c}{}\section{print\+\_\+fibonacci.\+c File Reference}
 \label{print__fibonacci_8c}\index{print\+\_\+fibonacci.\+c@{print\+\_\+fibonacci.\+c}}
 {\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}print\+\_\+fibonacci.\+h\char`\"{}}\\*
 Include dependency graph for print\+\_\+fibonacci.\+c\+:
 % FIG 0
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 int \hyperlink{print__fibonacci_8c_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Class to handle the printing of Fibonacci\textquotesingle{}s sequence. \end{DoxyCompactList}\item 
+int \hyperlink{print__fibonacci_8c_aed8c82931965bf3dac15e55660099226}{print\+\_\+fib} (int n)
+\begin{DoxyCompactList}\small\item\em Prints out the Fibonacci Sequence with some added changes. \end{DoxyCompactList}\item 
+int \hyperlink{print__fibonacci_8c_a2350f0813c7d7642aedab5aee3f2abea}{check\+\_\+prime} (int n\+\_\+prime)
 \end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
+\index{print\+\_\+fibonacci.\+c@{print\+\_\+fibonacci.\+c}!check\+\_\+prime@{check\+\_\+prime}}
+\index{check\+\_\+prime@{check\+\_\+prime}!print\+\_\+fibonacci.\+c@{print\+\_\+fibonacci.\+c}}
+\subsubsection[{\texorpdfstring{check\+\_\+prime(int n\+\_\+prime)}{check_prime(int n_prime)}}]{\setlength{\rightskip}{0pt plus 5cm}int check\+\_\+prime (
+\begin{DoxyParamCaption}
+\item[{int}]{n\+\_\+prime}
+\end{DoxyParamCaption}
+)}\hypertarget{print__fibonacci_8c_a2350f0813c7d7642aedab5aee3f2abea}{}\label{print__fibonacci_8c_a2350f0813c7d7642aedab5aee3f2abea}
+Method to check if the input is a prime number 
+\begin{DoxyParams}{Parameters}
+{\em n\+\_\+prime} & integer to check prime numbers up to \\
+\hline
+\end{DoxyParams}
 \index{print\+\_\+fibonacci.\+c@{print\+\_\+fibonacci.\+c}!main@{main}}
 \index{main@{main}!print\+\_\+fibonacci.\+c@{print\+\_\+fibonacci.\+c}}
 \subsubsection[{\texorpdfstring{main(int argc, char $\ast$argv[])}{main(int argc, char *argv[])}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
@@ -19,7 +37,11 @@ int \hyperlink{print__fibonacci_8c_a0ddf1224851353fc92bfbff6f499fa97}{main} (int
 \item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
 \end{DoxyParamCaption}
 )}\hypertarget{print__fibonacci_8c_a0ddf1224851353fc92bfbff6f499fa97}{}\label{print__fibonacci_8c_a0ddf1224851353fc92bfbff6f499fa97}
-Class to handle the printing of Fibonacci\textquotesingle{}s sequence Description\+: Program to generate the first n Fibonacii numbers F(n) printing\+:
+
+
+Class to handle the printing of Fibonacci\textquotesingle{}s sequence. 
+
+Description\+: Program to generate the first n Fibonacci numbers F(n) printing\+:
 \begin{DoxyEnumerate}
 \item \char`\"{}\+Buzz\char`\"{} w/ F(n) is divisible by 3.
 \item \char`\"{}\+Fizz\char`\"{} w/ F(n) is divisible by 5.
@@ -28,4 +50,19 @@ Class to handle the printing of Fibonacci\textquotesingle{}s sequence Descriptio
 \item the value of F(n) otherwise..
 \end{DoxyEnumerate}
 
-Date Created\+: 6/6/2017 Author\+: Sam Cesario 
+Date Created\+: 6/6/2017 Author\+: Sam Cesario \index{print\+\_\+fibonacci.\+c@{print\+\_\+fibonacci.\+c}!print\+\_\+fib@{print\+\_\+fib}}
+\index{print\+\_\+fib@{print\+\_\+fib}!print\+\_\+fibonacci.\+c@{print\+\_\+fibonacci.\+c}}
+\subsubsection[{\texorpdfstring{print\+\_\+fib(int n)}{print_fib(int n)}}]{\setlength{\rightskip}{0pt plus 5cm}int print\+\_\+fib (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{print__fibonacci_8c_aed8c82931965bf3dac15e55660099226}{}\label{print__fibonacci_8c_aed8c82931965bf3dac15e55660099226}
+
+
+Prints out the Fibonacci Sequence with some added changes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & the integer the sequence will print to. \\
+\hline
+\end{DoxyParams}

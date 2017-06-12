@@ -87,6 +87,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="print__fibonacci_8h_source.html">print_fibonacci.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for print_fibonacci.c:</div>
 <div class="dyncontent">
@@ -98,9 +100,37 @@ Include dependency graph for print_fibonacci.c:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="print__fibonacci_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
+<tr class="memdesc:a0ddf1224851353fc92bfbff6f499fa97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class to handle the printing of Fibonacci's sequence.  <a href="#a0ddf1224851353fc92bfbff6f499fa97">More...</a><br /></td></tr>
 <tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed8c82931965bf3dac15e55660099226"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="print__fibonacci_8c.html#aed8c82931965bf3dac15e55660099226">print_fib</a> (int n)</td></tr>
+<tr class="memdesc:aed8c82931965bf3dac15e55660099226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints out the Fibonacci Sequence with some added changes.  <a href="#aed8c82931965bf3dac15e55660099226">More...</a><br /></td></tr>
+<tr class="separator:aed8c82931965bf3dac15e55660099226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2350f0813c7d7642aedab5aee3f2abea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="print__fibonacci_8c.html#a2350f0813c7d7642aedab5aee3f2abea">check_prime</a> (int n_prime)</td></tr>
+<tr class="separator:a2350f0813c7d7642aedab5aee3f2abea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a2350f0813c7d7642aedab5aee3f2abea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int check_prime </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n_prime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Method to check if the input is a prime number </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n_prime</td><td>integer to check prime numbers up to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a0ddf1224851353fc92bfbff6f499fa97"></a>
 <div class="memitem">
 <div class="memproto">
@@ -124,7 +154,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Class to handle the printing of Fibonacci's sequence Description: Program to generate the first n Fibonacii numbers F(n) printing:</p><ol type="1">
+
+<p>Class to handle the printing of Fibonacci's sequence. </p>
+<p>Description: Program to generate the first n Fibonacci numbers F(n) printing:</p><ol type="1">
 <li>"Buzz" w/ F(n) is divisible by 3.</li>
 <li>"Fizz" w/ F(n) is divisible by 5.</li>
 <li>"FizzBuzz" w/ F(n) is divisible by 15.</li>
@@ -132,6 +164,30 @@ Functions</h2></td></tr>
 <li>the value of F(n) otherwise..</li>
 </ol>
 <p>Date Created: 6/6/2017 Author: Sam Cesario </p>
+
+</div>
+</div>
+<a class="anchor" id="aed8c82931965bf3dac15e55660099226"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int print_fib </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prints out the Fibonacci Sequence with some added changes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>the integer the sequence will print to. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

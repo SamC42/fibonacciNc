@@ -1,6 +1,7 @@
 
 /**
-	Class to handle the printing of Fibonacci's sequence
+	\brief Class to handle the printing of Fibonacci's sequence
+
 	Description: Program to generate the first n Fibonacci numbers F(n)
 	printing:
 		1. "Buzz" w/ F(n) is divisible by 3.
@@ -15,7 +16,28 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "print_fibonacci.h"
+int main(int argc, char *argv[]){
 
+	if(argv[0] == NULL){
+		printf("Please provide one arguement\n");
+	}
+	else{
+		// Convert String to long
+		long input_n = strtol(argv[1], NULL, 10);
+		print_fib(input_n);
+	}
+
+}
+
+
+
+/**
+	\brief Prints out the Fibonacci Sequence with some added changes
+
+	@param n the integer the sequence will print to.
+
+*/
 int print_fib(int n){
 
 	printf("Fibonacci Sequence Printing...\n");
@@ -43,7 +65,7 @@ int print_fib(int n){
 }
 /**
 	Method to check if the input is a prime number
-	@
+	@param n_prime integer to check prime numbers up to
 */
 int check_prime(int n_prime){
 
@@ -56,15 +78,6 @@ int check_prime(int n_prime){
 	}
 	return 1;
 }
-int main(int argc, char *argv[]){
-
-	if(argv[0] == NULL){
-		printf("Please provide one arguement\n");
-	}
-	else{
-		// Convert String to long
-		long input_n = strtol(argv[1], NULL, 10);
-		print_fib(input_n);
-	}
-
-}
+/**
+	Main Function.
+*/

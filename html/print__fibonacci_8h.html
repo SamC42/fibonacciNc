@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Fibonacci Printing: File Members</title>
+<title>Fibonacci Printing: print_fibonacci.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,16 +61,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li class="current"><a href="globals.html"><span>File&#160;Members</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
-  <div id="navrow3" class="tabs2">
-    <ul class="tablist">
-      <li class="current"><a href="globals.html"><span>All</span></a></li>
-      <li><a href="globals_func.html"><span>Functions</span></a></li>
-    </ul>
-  </div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,20 +78,79 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle">
+<div class="title">print_fibonacci.h File Reference</div>  </div>
+</div><!--header-->
 <div class="contents">
-<div class="textblock">Here is a list of all file members with links to the files they belong to:</div><ul>
-<li>check_prime()
-: <a class="el" href="print__fibonacci_8c.html#a2350f0813c7d7642aedab5aee3f2abea">print_fibonacci.c</a>
-, <a class="el" href="print__fibonacci_8h.html#ad8fab90c3781fc15a2adc05b0ee89e78">print_fibonacci.h</a>
-</li>
-<li>main()
-: <a class="el" href="print__fibonacci_8c.html#a0ddf1224851353fc92bfbff6f499fa97">print_fibonacci.c</a>
-</li>
-<li>print_fib()
-: <a class="el" href="print__fibonacci_8c.html#aed8c82931965bf3dac15e55660099226">print_fibonacci.c</a>
-, <a class="el" href="print__fibonacci_8h.html#aed8c82931965bf3dac15e55660099226">print_fibonacci.h</a>
-</li>
-</ul>
+<div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="print__fibonacci_8h__dep__incl.png" border="0" usemap="#print__fibonacci_8hdep" alt=""/></div>
+<!-- MAP 0 -->
+</div>
+</div>
+<p><a href="print__fibonacci_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aed8c82931965bf3dac15e55660099226"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="print__fibonacci_8h.html#aed8c82931965bf3dac15e55660099226">print_fib</a> (int n)</td></tr>
+<tr class="memdesc:aed8c82931965bf3dac15e55660099226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints out the Fibonacci Sequence with some added changes.  <a href="#aed8c82931965bf3dac15e55660099226">More...</a><br /></td></tr>
+<tr class="separator:aed8c82931965bf3dac15e55660099226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8fab90c3781fc15a2adc05b0ee89e78"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="print__fibonacci_8h.html#ad8fab90c3781fc15a2adc05b0ee89e78">check_prime</a> (int b)</td></tr>
+<tr class="separator:ad8fab90c3781fc15a2adc05b0ee89e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ad8fab90c3781fc15a2adc05b0ee89e78"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int check_prime </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n_prime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Method to check if the input is a prime number </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n_prime</td><td>integer to check prime numbers up to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aed8c82931965bf3dac15e55660099226"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int print_fib </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prints out the Fibonacci Sequence with some added changes. </p>
+<p>print_fibonacci header file</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>the integer the sequence will print to. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
