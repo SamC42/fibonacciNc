@@ -35,7 +35,7 @@ void testPointers(void){
 	int * mypointer;
 
 	mypointer = &firstvalue; // Sets mypointer to the address firstValue, now by manipulating mypointer we can change firstValue's value
-	printf("%i\n",mypointer);
+	printf("mypointer: %i\n",mypointer);
 	*mypointer = 10; // Sets the value of mypointer to 10 (my pointer points to firstValue so in effect we are changing firstvalue)
 	mypointer = &secondvalue; // We can now re use mypointer and set it to another address
 	*mypointer = 20;
